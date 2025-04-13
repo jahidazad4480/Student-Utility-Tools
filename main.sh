@@ -62,7 +62,7 @@ echo "Invalid operator"
 fi
        
 ;;
-	2)
+ 2)
 echo "------------------------"
 echo "    Grade Calculator"
 echo "------------------------"
@@ -214,7 +214,8 @@ echo "------------------------"
 
 read -p "Enter the number to be converted: " num
 
-echo "Choose the base to be converted to"
+echo "Choose the base
+to be converted to"
 echo "1. Decimal"
 echo "2. Binary"
 echo "3. Octal"
@@ -292,73 +293,73 @@ read -p "Please select an option : " option
 case $option in
     1)
     read -p "Enter amount in BDT :" BDT
-	EUR=$(echo "scale=2; $BDT*0.00925"|bc)
+ EUR=$(echo "scale=2; $BDT*0.0073"|bc)
     echo "BDT $BDT is EUR $EUR"
     ;;
     
-	2)
+ 2)
     read -p "Enter amount in BDT :" BDT
-    USD=$(echo "scale=2; $BDT*0.00964"|bc)
+    USD=$(echo "scale=2; $BDT*0.0082"|bc)
     echo "BDT $BDT is USD $USD"
     ;;
     
-	3)
+ 3)
     read -p "Enter amount in BDT :" BDT
-    INR=$(echo "scale=2; $BDT*0.78746"|bc)
+    INR=$(echo "scale=2; $BDT*0.71"|bc)
     echo "BDT $BDT is INR $INR"
     ;;
     
-	4)
+ 4)
     read -p "Enter amount in EUR :" EUR
-    BDT=$(echo "scale=2; $EUR*104.399"|bc)
+    BDT=$(echo "scale=2; $EUR*137.75"|bc)
     echo "EUR $EUR is BDT $BDT"
     ;;
     
-	5)
+ 5)
     read -p "Enter amount in EUR :" EUR
-    USD=$(echo "scale=2; $EUR*1.04156"|bc)
+    USD=$(echo "scale=2; $EUR*1.14"|bc)
     echo "EUR $EUR is USD $USD"
     ;;
     
-	6)
+ 6)
     read -p "Enter amount in EUR :" EUR
-    INR=$(echo "scale=2; $EUR*85.0706"|bc)
+    INR=$(echo "scale=2; $EUR*97.89"|bc)
     echo "EUR $EUR is INR $INR"
     ;;
     
-	7)
+ 7)
     read -p "Enter amount in USD :" USD
-    BDT=$(echo "scale=2; $USD*100.233"|bc)
+    BDT=$(echo "scale=2; $USD*121.53"|bc)
     echo "USD $USD is BDT $BDT"
     ;;
     
-	8)
+ 8)
     read -p "Enter amount in USD :" USD
-    EUR=$(echo "scale=2; $USD*0.95993"|bc)
+    EUR=$(echo "scale=2; $USD*0.88"|bc)
     echo "USD $USD is EUR $EUR"
     ;;
     
-	9)
+ 9)
     read -p "Enter amount in USD :" USD
-    INR=$(echo "scale=2; $USD*81.6759"|bc)
+    INR=$(echo "scale=2; $USD*86.10"|bc)
     echo "USD $USD is INR $INR"
     ;;
     
-	10)
+ 10)
     read -p "Enter amount in INR :" INR
-    BDT=$(echo "scale=2; $INR*1.22563"|bc)
+    BDT=$(echo "scale=2; $INR*1.41"|bc)
     echo "INR $INR is BDT $BDT"
     ;;
     
-	11)
+ 11)
     read -p "Enter amount in INR :" INR
-    EUR=$(echo "scale=2; $INR*0.01177"|bc)
+    EUR=$(echo "scale=2; $INR*0.010"|bc)
     echo "INR $INR is EUR $EUR"
     ;;
     
-	12)
+ 12)
     read -p "Enter amount in INR :" INR
-    USD=$(echo "scale=2; $INR*0.01224"|bc)
+    USD=$(echo "scale=2; $INR*0.012"|bc)
     echo "INR $INR is USD $USD"
     ;;
     
@@ -424,4 +425,3 @@ studentUtility
 
 echo 
 done
-
